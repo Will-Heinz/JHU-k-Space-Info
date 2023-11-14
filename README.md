@@ -6,9 +6,12 @@ The k-space information (kSI) quantifies the spatial information of an image (or
 Details of the method can be found here: 
 Heinz, W.F., Werbin, J.L., Lattman, E. et al. Computing Spatial Information from Fourier Coefficient Distributions. J Membrane Biol 241, 59–68 (2011). https://doi.org/10.1007/s00232-011-9362-x
 
-## Basic usage
+## Code heirarchy
 Info.pro is a wrapper function that calculates the kSI, Hks, and Iks. These terms are defined in the J.Membrane Biol. article.
 
+The other routines are helpers that do the heavy lifiting, primarily: infoCalc.pro, infoSigmaMulti.pro, and infoSigma.pro.
+
+## Basic usage
 Call info.pro as result = info(image). 
 
 Input: image - an image (more generally, an array of up to 8 dimensions).
